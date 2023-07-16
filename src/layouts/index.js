@@ -13,7 +13,7 @@ function BasicLayout(props) {
 
     let url = '#'
     switch (key) {
-      case 'doc': url = 'https://www.baidu.com'; break;
+      case 'doc': url = 'http://newbear.top/'; break;
       case 'ref': url = 'https://api.fanyi.baidu.com/doc/21'; break;
       default: break;
     }
