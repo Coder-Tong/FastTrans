@@ -1,8 +1,25 @@
+@keyframes show-details {
+  0% {
+    opacity: 10%;
+  }
+
+  50% {
+    opacity: 80%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+
 .loginContainer {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   width: 100%;
   user-select: none;
+
+  animation: show-details 1.5s ease-in forwards;
 
   .title1 {
     margin-top: 100px;

@@ -1,5 +1,5 @@
 import { memo, useEffect, useState } from 'react';
-import { Input, Form, Button } from 'antd';
+import { Input, Form, Button, notification } from 'antd';
 import { router } from 'umi';
 import md5 from 'blueimp-md5';
 import { checkValid } from '@/services/login';
@@ -38,6 +38,7 @@ const Login = ({
         if (isSuccess) {
           window.localStorage.setItem('baidu_trans_appId', appid)
           window.localStorage.setItem('baidu_trans_key', key)
+          notification.success({ message: '验证成功' })
         }
         setLoading(false)
         if (isSuccess) router.push('/')
