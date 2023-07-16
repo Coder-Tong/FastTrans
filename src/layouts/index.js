@@ -29,7 +29,7 @@ function BasicLayout(props) {
 
   // 查看源码
   const viewCodeSource = () => {
-    window.open('#')
+    window.open('https://github.com/Coder-Tong/FastTrans')
   }
 
   return (
