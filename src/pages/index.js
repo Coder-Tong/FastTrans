@@ -43,15 +43,15 @@ const HomePage = () => {
         data.forEach(item => {
           const { src, dst } = item
           const varName = dst.split(' ').join('_').toUpperCase()
-          trans_ch.push(`${varName}: '${src}';`)
-          trans_en.push(`${varName}: '${dst}';`)
+          trans_ch.push(`${varName}: '${src}',`)
+          trans_en.push(`${varName}: '${dst}',`)
         }); break
       case 2:
         data.forEach(item => {
           const { src, dst } = item
           const varName = dst.split(' ').join('_').toLowerCase()
-          trans_ch.push(`${varName}: '${src}';`)
-          trans_en.push(`${varName}: '${dst}';`)
+          trans_ch.push(`${varName}: '${src}',`)
+          trans_en.push(`${varName}: '${dst}',`)
         }); break
       case 3:
         data.forEach((item, index) => {
@@ -64,8 +64,8 @@ const HomePage = () => {
             default: indexStr = `${index}`; break
           }
           const varName = `${curTempField || 'i18n'}_${indexStr}`
-          trans_ch.push(`${varName}: '${src}';`)
-          trans_en.push(`${varName}: '${dst}';`)
+          trans_ch.push(`${varName}: '${src}',`)
+          trans_en.push(`${varName}: '${dst}',`)
         }); break
       default: break
     }
